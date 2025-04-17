@@ -326,6 +326,113 @@
 						loading="lazy" />
 				</div>
 			</section>
+			<section class="calculate">
+				<div class="calculate-inner container">
+					<div class="calculate-body">
+						<h2
+							class="calculate-title title-medium backdrop-title"
+							data-title="BMI">
+							Input your BMI
+						</h2>
+						<div class="calculate-description">
+							<p>
+								Duo graece ponderum ne, ei mel aliquando. Pro te tamquam
+								nonumes, nam no nemore epicurei
+							</p>
+						</div>
+						<form class="calculate-form">
+							<div class="calculate-form-body">
+								<label class="visually-hidden" for="height">Height</label>
+								<input
+									type="number"
+									class="calculate-input input"
+									id="height"
+									name="height"
+									placeholder="Height / cm"
+									autocomplete="off" />
+								<label class="visually-hidden" for="weight">Weight</label>
+								<input
+									type="number"
+									class="calculate-input input"
+									id="weight"
+									name="weight"
+									placeholder="Weight / kg"
+									autocomplete="off" />
+								<label class="visually-hidden" for="age">Age</label>
+								<input
+									type="number"
+									class="calculate-input input"
+									id="age"
+									name="age"
+									placeholder="Age"
+									autocomplete="off" />
+								<label class="visually-hidden" for="gender">Gender</label>
+								<select
+									name="gender"
+									class="calculate-input input"
+									id="gender"
+									required>
+									<option value="" disabled selected>Gender</option>
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+								</select>
+								<label class="visually-hidden" for="activity-factor"
+									>Activity factor</label
+								>
+								<select
+									class="calculate-input input wide"
+									name="activity-factor"
+									id="activity-factor"
+									required>
+									<option value="" disabled selected>
+										Select an activity factor:
+									</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+							</div>
+							<button class="calculate-button button transparent" type="submit">
+								Calculate
+							</button>
+						</form>
+					</div>
+					<div class="calculate-table-wrapper">
+						<table class="calculate-table">
+							<thead>
+								<tr>
+									<th>BMI</th>
+									<th>Weight status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Below 18.5</td>
+									<td>Underweight</td>
+								</tr>
+								<tr>
+									<td>18.5 - 24.9</td>
+									<td>Healthy</td>
+								</tr>
+								<tr>
+									<td>25.0 - 29.9</td>
+									<td>Overweight</td>
+								</tr>
+								<tr>
+									<td>30.0 - and Above</td>
+									<td>Obese</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">
+										<b>BMR</b> Metabolic Rate / <b>BMR</b> Body Mass Index
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>
