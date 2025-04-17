@@ -943,6 +943,7 @@ input[type='number'] {
 
 .footer-copyright {
 	font-size: 14px;
+	color: var(--color-light);
 }
 
 @media (max-width: 1919px) {
