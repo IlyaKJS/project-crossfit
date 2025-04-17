@@ -1134,3 +1134,16 @@ input[type='number'] {
 		margin-bottom: 40px;
 	}
 }
+@media (max-width: 460px) {
+	.calculate-title:not(:last-child) {
+		padding-left: 16px;
+	}
+	.backdrop-title::before {
+		right: calc(100% + -15px);
+		width: 21px;
+	}
+	.backdrop-title::after {
+		top: -0.3em;
+		left: -0.3em;
+	}
+}
